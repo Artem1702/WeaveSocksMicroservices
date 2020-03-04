@@ -1,0 +1,27 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+
+<suite name="TestAll">
+
+    <test name="all">
+        <classes>
+            <class name="com.yevtua.tests.LoginTest"/>
+            <class name="com.yevtua.tests.RegistrationTest"/>
+        </classes>
+    </test>
+
+    <test name="registration">
+        <groups>
+            <run>
+                <include name="registration"/>
+            </run>
+        </groups>
+    </test>
+
+    <test name="login">
+        <groups>
+            <run>
+                <include name="login"/>
+            </run>
+        </groups>
+    </test>
+</suite>
